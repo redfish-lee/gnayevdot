@@ -1,0 +1,75 @@
+# Site settings
+baseurl = "https://example.org/"
+themesDir = "themes/"
+languageCode = "en-us"
+title = "Strive to be Lazy"
+theme = "cactus"
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+# Disable comments by leaving disqusShortname empty
+disqusShortname = "gnayev"
+
+[params]
+    name = "redfishleo"
+    description = "Describe your website"
+    # bio = "Remember what I've faced with"
+    bio = "腦容量是用來裝更美好的東西"
+    # Enter optionally your twitter account
+    twitter = "Your Twitter account"
+    enableRSS = true
+
+    # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+    # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+    customCSS = []
+    customJS  = []
+
+    # The variables below are optionally too and can be used to
+    # translate or customize each string of the theme.
+    # Navigation links
+    home = ""
+    subscribe = ""
+    # Pagination links
+    olderPosts = ""
+    newerPosts = ""
+    readMore = ""
+    copyright = ""
+    # Sharing options and author information in posts
+    aboutAuthor = "You can call me refish or Leo (:"
+    tweet = ""
+    share = ""
+    # 404 page
+    title404 = ""
+    subtitle404 = ""
+
+    # Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
+    iconFont = "mono-social"
+    # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
+    socialIconStyle = "rounded"
+
+# Add additional social link entries underneath
+[social]
+    facebook = "https://www.facebook.com/redfishleolee"
+    github   = "https://www.github.com/redfish-lee"
+#     linkein  = "https://www.linkedin.com/in/redfish-hong-yu-li-b60122105/"
+
+[permalinks]
+    post = "/:year/:month/:day/:slug"
+
+[taxonomies]
+    tag = "tags"
+    catagory = "catagories"
+#
+# [[params.menu]]
+#     before = true
+#     label = "Home"
+#     link = "/"
+#
+# [[params.menu]]
+#     before = false
+#     label = "Catagory"
+#     link = "catagories/"
+#
+# [[params.menu]]
+#     before = false
+#     label = "Tag"
+#     link = "tags/"
