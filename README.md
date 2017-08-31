@@ -20,4 +20,4 @@
 - [ ] archived with timeline
 
 ### Progress
-- [v] browser website icon
+- [x] browser website icon
