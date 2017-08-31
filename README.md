@@ -12,6 +12,7 @@
     - tags
 - [ ] TOC sidebar of posts
 - [ ] [Scroll back button](https://getflywheel.com/layout/add-sticky-back-top-button-website/)
+- [ ] [Search Bar](https://www.algolia.com/)
 
 ### TODO-2
 [Reference](http://chenrudan.github.io/)
