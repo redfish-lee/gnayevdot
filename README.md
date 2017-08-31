@@ -1,8 +1,7 @@
 ## Personal Blog using Hugo
 
 ### TODO
-- [ ] 5 posts/subpage
-    - https://gohugo.io/templates/pagination/
+- [ ] 5 posts/subpage, [refer link](https://gohugo.io/templates/pagination/)
 - [ ] renew icon
     - facebook
     - github
@@ -12,12 +11,13 @@
     - catagories
     - tags
 - [ ] TOC sidebar of posts
+- [ ] [Scroll back button](https://getflywheel.com/layout/add-sticky-back-top-button-website/)
 
-
-### TODO-2 
+### TODO-2
 [Reference](http://chenrudan.github.io/)
 - [ ] view/visit statistic
-- [ ] go to top
 - [ ] 漸進式產生
 - [ ] archived with timeline
-- [ ] browser website icon
+
+### Progress
+- [v] browser website icon

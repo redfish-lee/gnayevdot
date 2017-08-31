@@ -6,7 +6,11 @@
     {{ with .Site.Params.copyright }}
         {{ . | markdownify }}
     {{ else }}
-        © Copyright {{ now.Format "2006" }} {{ .Site.Params.name }}
+        {{ if .Site.Params.sinceTime }}
+            © Copyright {{ .Site.Params.sinceTime }} {{ " - " }} {{ now.Format "2006" }} {{ .Site.Params.name }}
+        {{ else }}
+            © Copyright {{ now.Format "2006" }} {{ .Site.Params.name }}
+        {{ end }}
     {{ end }}
     </p>
 </footer>

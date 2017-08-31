@@ -4,8 +4,20 @@
 {{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
 {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ .Hugo.Generator }}
-<title>{{ .Title }}{{ if .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
-<link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL }}">
+<title>{{ .Title }}{{ if .IsHome }} &middot; {{ .Site.Params.name }}{{ end }}</title>
+
+{{ if eq .Site.Params.iconSwitch "normal" }}
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicons/normal-48.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicons/normal-500.png">
+{{ else if eq .Site.Params.iconSwitch "simple" }}
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicons/simple-48.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicons/simple-512.png">
+{{ else if eq .Site.Params.iconSwitch "round" }}
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicons/round-48.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicons/round-512.png">
+{{ end }}
+
+
 <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
 <link rel="stylesheet" href="{{ "css/highlight.css" | absURL }}">
 {{ range .Site.Params.customCSS }}

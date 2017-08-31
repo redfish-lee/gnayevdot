@@ -11,9 +11,11 @@ disqusShortname = "gnayev"
 
 [params]
     name = "redfishleo"
-    description = "Describe your website"
+    description = ""
     # bio = "Remember what I've faced with"
     bio = "腦容量是用來裝更美好的東西"
+    sinceTime = "2014"
+
     # Enter optionally your twitter account
     twitter = "Your Twitter account"
     enableRSS = true
@@ -45,6 +47,10 @@ disqusShortname = "gnayev"
     iconFont = "mono-social"
     # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
     socialIconStyle = "rounded"
+
+    # Webpage icon with "round", "simple", "normal"
+    iconSwitch = "simple"
+
 
 # Add additional social link entries underneath
 [social]
