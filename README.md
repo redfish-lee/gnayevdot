@@ -1,14 +1,14 @@
 ## Personal Blog using Hugo
 
 ### TODO
-- []5 posts/subpage
+- [ ] 5 posts/subpage
     - https://gohugo.io/templates/pagination/
-- []renew icon
+- [ ] renew icon
     - facebook
     - github
     - Linkein
     - Instagram
-- []add Navigation pages
+- [ ] add Navigation pages
     - catagories
     - tags
-- post TOC sidebar
+- [ ] TOC sidebar of posts
