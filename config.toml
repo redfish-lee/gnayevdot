@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://example.org/"
+baseurl = "http://gnayev.me"
 themesDir = "themes/"
 languageCode = "en-us"
 title = "Strive to be Lazy"
