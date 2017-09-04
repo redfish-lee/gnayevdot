@@ -16,7 +16,7 @@ Jupyter Notebook 是很好用的 python 即時編輯工具，可以直接在 `.i
 [I 08:21:06.180 NotebookApp] 0 active kernels
 [I 08:21:06.180 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=f526a81e27d5348333cbe55152a8e524da7137dafais14ae
 ```
-![Alt text](/images/2017-08-23-remote-jupyter-notebook/8888.png)
+![Alt text](/images/2017-08/8888.png)
 
 ## Setup Using [ngrok](https://ngrok.com/)
 ### Install
@@ -49,11 +49,11 @@ http://localhost:8888/?token=f526a81e27d5348333cbe55152a8e524da7137dafais14ae
 ### @localhost
 打開瀏覽器開啟網頁即可連線到 remote 端的 port ，如果有在測試網頁的就不用另外再開一個網站測試就可以公開或是讓特定對象存取。
 記得要輸入 token。
-![Alt text](/images/2017-08-23-remote-jupyter-notebook/token.png)
+![Alt text](/images/2017-08/token.png)
 
 ### Advanced Authentication
 ```bash
 # More secure method using account to access
 [redfish@remote]$ ngrok http -auth="username:password" 8888
 ```
-![Alt text](/images/2017-08-23-remote-jupyter-notebook/auth.png)
+![Alt text](/images/2017-08/auth.png)

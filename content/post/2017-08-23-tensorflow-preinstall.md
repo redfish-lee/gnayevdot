@@ -3,7 +3,7 @@ title: "Tensorflow Preinstall: Drivers, cuDNN, CUDA"
 date: 2017-08-23T01:36:43+08:00
 description: ""
 categories: []
-tags: ["Tensorflow", "Install"]
+tags: ["Tensorflow", "Environment"]
 ---
 ### Preinstall
 Some packages for builds & dependencies
