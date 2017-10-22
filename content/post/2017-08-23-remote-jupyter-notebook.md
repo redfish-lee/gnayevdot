@@ -57,3 +57,8 @@ http://localhost:8888/?token=f526a81e27d5348333cbe55152a8e524da7137dafais14ae
 [redfish@remote]$ ngrok http -auth="username:password" 8888
 ```
 ![Alt text](/images/2017-08/auth.png)
+
+## INFO
+- [UPDATE INFO 20170930]
+Without installing third-party software, we can simply type: `$ jupyter notebook --ip=*`
+Then computers with any IP address can listen to `YOUR.IP.ADDRESS:8888` to access jupyter notebook.
