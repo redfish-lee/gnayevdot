@@ -19,3 +19,19 @@ menu = "main"
 After military training, I found that what I've learned or problems I faced with just become blank in my mind. So, I think maybe it's a good way to write blogs and make some notes to remind how I deal with troubles. If you have any ideas or questions, feel free to contact me!
 
 `Written in 2017-08-31`
+
+
+```
+      ___           ___           ___                         ___                   
+     /  /\         /  /\         /  /\          __           /  /\          ___     
+    /  /::\       /  /::|       /  /::\        |  |\        /  /::\        /  /\    
+   /  /:/\:\     /  /:|:|      /  /:/\:\       |  |:|      /  /:/\:\      /  /:/    
+  /  /:/  \:\   /  /:/|:|__   /  /::\ \:\      |  |:|     /  /::\ \:\    /  /:/     
+ /__/:/_\_ \:\ /__/:/ |:| /\ /__/:/\:\_\:\     |__|:|__  /__/:/\:\ \:\  /__/:/  ___ 
+ \  \:\__/\_\/ \__\/  |:|/:/ \__\/  \:\/:/     /  /::::\ \  \:\ \:\_\/  |  |:| /  /\
+  \  \:\ \:\       |  |:/:/       \__\::/     /  /:/~~~~  \  \:\ \:\    |  |:|/  /:/
+   \  \:\/:/       |__|::/        /  /:/     /__/:/        \  \:\_\/    |__|:|__/:/ 
+    \  \::/        /__/:/        /__/:/      \__\/          \  \:\       \__\::::/  
+     \__\/         \__\/         \__\/                       \__\/           ~~~~   
+
+```
