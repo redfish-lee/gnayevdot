@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://gnayev.me"
+baseurl = "http://metapx.net"
 themesDir = "themes/"
 languageCode = "en-us"
 title = "Strive to be Lazy"
