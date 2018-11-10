@@ -22,5 +22,5 @@ script:
 deploy:
   provider: gae
   keyfile: gae_metapx.json
-  project: <metapx-222113>
+  project: metapxdot
   skip_cleanup: true
