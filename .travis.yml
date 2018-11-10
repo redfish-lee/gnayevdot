@@ -2,19 +2,16 @@ language: go
 go: 1.9
 
 install:
-  - mkdir -p $HOME/src
-  - mv $HOME/gopath/src/github.com/gohugoio/hugo $HOME/src
-  - export TRAVIS_BUILD_DIR=$HOME/src/hugo
-  - cd $HOME/src/hugo
   - go get github.com/magefile/mage
+  - go get -d github.com/gohugoio/hugo
+  - cd ${GOPATH:-$HOME/go}/src/github.com/gohugoio/hugo
 
 script:
-  - go mod download
-  - mage -v test
-  - mage -v check
-  - mage -v hugo
+  - mage vendor
+  - mage install
   - hugo version
 
 before_install:
   - export GOPATH=$HOME/go
   - export PATH=$PATH:$GOPATH/bin
+  - echo $GOPATH
