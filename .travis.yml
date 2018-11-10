@@ -9,8 +9,8 @@ before_install:
   - export PATH=$PATH:$HOME/bin
 
 install:
-  - wget https://github.com/gohugoio/hugo/releases/download/$HUGO_VERSION/$HUGO_SOURCE_NAME.tar.gz $HOME/bin
   - cd $HOME/bin
+  - curl https://github.com/gohugoio/hugo/releases/download/$HUGO_VERSION/$HUGO_SOURCE_NAME.tar.gz
   - tar xzf $HUGO_SOURCE_NAME.tar.gz
   - cp $HUGO_SOURCE_NAME/hugo $HOME/bin
 
