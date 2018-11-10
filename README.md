@@ -1,4 +1,5 @@
 ## Personal Blog using Hugo
+[![Build Status](https://travis-ci.com/redfish-lee/gnayevdot.svg?token=r6Wz4HDU4S1q2ryDGNSE&branch=master)](https://travis-ci.com/redfish-lee/gnayevdot)
 
 ### TODO
 - [ ] 5 posts/subpage, [refer link](https://gohugo.io/templates/pagination/)
