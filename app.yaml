@@ -1,0 +1,23 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /$
+  static_files: public/index.html
+  upload: public/index.html
+
+# serve the list of posts
+- url: /posts
+  static_files: public/posts/index.html
+  upload: public/posts/index.html
+  
+# serve each post
+- url: /posts/(.*)/
+  static_files: public/posts/\1/index.html
+  upload: public/posts/(.*)
+
+# serve my css
+- url: /(.*)
+  static_files: public/\1
+  upload: public/(.*)
