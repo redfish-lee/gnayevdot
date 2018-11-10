@@ -6,7 +6,7 @@ env:
     - HUGO_VERSION="v0.51"
 before_install:
   - openssl aes-256-cbc -K $encrypted_824bf77d8762_key -iv $encrypted_824bf77d8762_iv
-      -in gae_metapx.json.enc -out _enc/gae_metapx.json -d
+      -in gae_metapx.json.enc -out gae_metapx.json -d
   - mkdir -p $HOME/bin
   - export PATH=$PATH:$HOME/bin
 
@@ -21,6 +21,6 @@ script:
 
 deploy:
   provider: gae
-  keyfile: _enc/gae_metapx.json
+  keyfile: gae_metapx.json
   project: <metapx-222113>
   skip_cleanup: true
