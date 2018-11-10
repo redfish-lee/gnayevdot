@@ -5,19 +5,16 @@ env:
     - HUGO_SOURCE_NAME="hugo_0.51_Linux-64bit"
     - HUGO_VERSION="v0.51"
 before_install:
-  - openssl aes-256-cbc -K $encrypted_824bf77d8762_key -iv $encrypted_824bf77d8762_iv
-      -in gae_metapx.json.enc -out gae_metapx.json -d
-  - pwd
-  - ls -al
   - mkdir -p $HOME/bin
   - export PATH=$PATH:$HOME/bin
+  - |
+      (cd $HOME/bin 
+      && curl -OL https://github.com/gohugoio/hugo/releases/download/$HUGO_VERSION/$HUGO_SOURCE_NAME.tar.gz
+      && tar xvzf $HUGO_SOURCE_NAME.tar.gz)
 
 install:
-  - cd $HOME/bin
-  - curl -OL https://github.com/gohugoio/hugo/releases/download/$HUGO_VERSION/$HUGO_SOURCE_NAME.tar.gz
-  - tar xvzf $HUGO_SOURCE_NAME.tar.gz
-  - cd $HOME
-
+  - openssl aes-256-cbc -K $encrypted_824bf77d8762_key -iv $encrypted_824bf77d8762_iv
+      -in gae_metapx.json.enc -out gae_metapx.json -d
 script:
   - hugo version
 
