@@ -1,8 +1,9 @@
 language: go
 go: 1.9
 env:
-  - HUGO_SOURCE_NAME="hugo_0.51_Linux-64bit"
-  - HUGO_VERSION="v0.51"
+  global:
+    - HUGO_SOURCE_NAME="hugo_0.51_Linux-64bit"
+    - HUGO_VERSION="v0.51"
 
 before_install:
   - mkdir -p $HOME/bin
