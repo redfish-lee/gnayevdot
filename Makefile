@@ -1,2 +1,5 @@
 run:
-	echo "no-op makefile for travis"
+	echo "hugo run"
+	hugo --verbose
+clean:
+	rm -rf public
