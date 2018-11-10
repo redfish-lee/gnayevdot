@@ -1,13 +1,10 @@
 # Hugo default output directory
 /public
 
-## OS Files
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
+# encrypt files
+_enc/*
 
+## OS Files
 # OSX
 .DS_Store
 .vscode
