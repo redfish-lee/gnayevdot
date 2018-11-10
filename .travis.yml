@@ -13,8 +13,8 @@ before_install:
 install:
   - cd $HOME/bin
   - curl -OL https://github.com/gohugoio/hugo/releases/download/$HUGO_VERSION/$HUGO_SOURCE_NAME.tar.gz
-  - ls -al
   - tar xvzf $HUGO_SOURCE_NAME.tar.gz
+  - cd $HOME
 
 script:
   - hugo version
