@@ -7,6 +7,8 @@ env:
 before_install:
   - openssl aes-256-cbc -K $encrypted_824bf77d8762_key -iv $encrypted_824bf77d8762_iv
       -in gae_metapx.json.enc -out gae_metapx.json -d
+  - ls -al
+  - locate gae_metapx.json
   - mkdir -p $HOME/bin
   - export PATH=$PATH:$HOME/bin
 
