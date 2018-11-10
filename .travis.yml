@@ -11,7 +11,7 @@ before_install:
 
 install:
   - cd $HOME/bin
-  - curl https://github.com/gohugoio/hugo/releases/download/$HUGO_VERSION/$HUGO_SOURCE_NAME.tar.gz
+  - curl -O https://github.com/gohugoio/hugo/releases/download/$HUGO_VERSION/$HUGO_SOURCE_NAME.tar.gz
   - ls -al
   - tar xzf $HUGO_SOURCE_NAME.tar.gz
   - cp $HUGO_SOURCE_NAME/hugo $HOME/bin
