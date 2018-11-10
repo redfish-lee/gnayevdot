@@ -18,3 +18,9 @@ install:
 
 script:
   - hugo version
+
+deploy:
+  provider: gae
+  keyfile: _enc/gae_metapx.json
+  project: <metapx-222113>
+  skip_cleanup: true
