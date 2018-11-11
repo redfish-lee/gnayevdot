@@ -101,7 +101,7 @@ $ git reset 5d69206
 ```
 
 <center>
-    <img src="http://imgur.com/IUNV75O.jpg" >
+    <img src="https://imgur.com/IUNV75O.jpg" >
 </center>
 
  - You have in essence rewinded the project's history
@@ -121,7 +121,7 @@ $ git branch
 Circles are commits. New Branch is a different version of the Git project. It contains commits from Master but also has commits that Master does not have.
 
 <center>
-    <img src="http://i.imgur.com/hD5ddgT.jpg" >
+    <img src="https://i.imgur.com/hD5ddgT.jpg" >
 </center>
 
 #### About New Branch
