@@ -18,6 +18,7 @@ install:
 
 script:
   - hugo version
+  - hugo --verbose
 
 deploy:
   provider: gae
