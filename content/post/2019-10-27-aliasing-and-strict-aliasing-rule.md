@@ -15,6 +15,7 @@ tags: ["C/C++"]
 - 因為 aliasing 的錯誤使用很可能無法在 compile time 發現，可能會造成輸出的結果錯誤
 - ex., ***undefine behavior***，像是用 double pointer 去 deference 一個 int
 
+```c++
     int *pA = new int(4);   // new a space
     int *pB = pA;           // Both of them store same address
     
@@ -23,9 +24,10 @@ tags: ["C/C++"]
     delete pA;
     
     cout << *pB << endl;    // xx
+```
 
 ### Dangling Pointer
-
+```c++
     int *pA = nullptr;
     {
     	int n = 20;
@@ -34,12 +36,12 @@ tags: ["C/C++"]
     }
     
     // pA becomes a dangling pointer
-    cout << *pA << endl;     // xx
-
+    cout << *pA << endl;       // xx
+```
 ## Example
 
 一個說明 aliasing 如何影響 compiler 優化的例子：
-
+```c++
     // Case 1 
     void foo(int *a, int *b, int *res) {
     	for (int i = 0; i < 10; i++) {
@@ -82,6 +84,7 @@ tags: ["C/C++"]
     foo(&val, &val, &val);
     
     // 因為 a, b, res 都是 aliasing, 所以每個 iteration 後，值都會改變
+```
 
 - `restrict` 可以用來表示某個 pointer 沒有 aliasing，由 programmer 自行決定
 - **Strick Aliasing 並無法改變 `foo()` 能否套用優化**
@@ -93,14 +96,16 @@ tags: ["C/C++"]
 - `-O2` 之後的 compilation level 預設執行 strict aliasing rule
 - 這也是為什麼有時候 `-O1` 與 `-O2` 的執行結果有可能不同 (ex., )
 
-        // cast result differs in different levels of compilation
-        double d = 3.4;
-        unsigned int *p = (unsigned int *)(&d);
+```c++
+    // cast result differs in different levels of compilation
+    double d = 3.4;
+    unsigned int *p = (unsigned int *)(&d);
+```
 
 - `CFLAGS=-fno-strict-aliasing` 可以取消 strict aliasing rule
 - 不允許建立與原先型別不同的 alias，ex., 用 double pointer 去存取 int
 
-    > *Dereferencing a cast of a variable from one type of pointer to a different type is usually in violation of the strict aliasing rule.*
+> *Dereferencing a cast of a variable from one type of pointer to a different type is usually in violation of the strict aliasing rule.*
 
 ## Assumptions that Strict Aliasing is enabled
 
@@ -108,6 +113,7 @@ tags: ["C/C++"]
 - 如此 programmer 就要負責避免可能產生不同型別的 alias (ex., 亂作 casing)
 - **這個設計主要的目的是擴展優化在在某些情境下可以執行**，而不是消極認定 aliasing 的可能性
 
+```c++
     void foo(int *a, int *b, long *res) {
     	int temp = *a + *b;
     	for (int i = 0; i < 10; i++) {
@@ -118,6 +124,7 @@ tags: ["C/C++"]
     // strict aliasing warning
     // long *res can't be alias of int* a, *b
     foo(&val, &val, &val);  
+```
 
 # References
 
